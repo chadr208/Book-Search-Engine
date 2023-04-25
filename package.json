@@ -1,0 +1,29 @@
+{
+  "name": "mern-stack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type:": "commonjs",
+  "scripts": {
+    "test": "eslint",
+    "install": "cd client && npm install && cd ../server && npm install",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "server": "cd server && npm run watch",
+    "start": "cd server && npm run start",
+    "build": "cd client && npm run build",
+    "watch": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chakra-react-select": "^4.6.0",
+    "colors": "^1.4.0",
+    "concurrently": "^8.0.1"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.22"
+  }
+}
